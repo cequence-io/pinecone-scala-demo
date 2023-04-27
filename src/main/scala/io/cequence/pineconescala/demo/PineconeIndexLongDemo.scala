@@ -8,7 +8,7 @@ import io.cequence.pineconescala.service.PineconeIndexServiceFactory
 import scala.concurrent.ExecutionContext
 
 // run me - env. variables PINECONE_SCALA_CLIENT_API_KEY and PINECONE_SCALA_CLIENT_ENV must be set
-object PineconeIndexExample extends App {
+object PineconeIndexLongDemo extends App {
 
   implicit val ec = ExecutionContext.global
   implicit val materializer = Materializer(ActorSystem())

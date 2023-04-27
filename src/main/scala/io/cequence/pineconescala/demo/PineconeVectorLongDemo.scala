@@ -10,7 +10,7 @@ import scala.concurrent.ExecutionContext
 import scala.util.Random
 
 // run me - env. variables PINECONE_SCALA_CLIENT_API_KEY and PINECONE_SCALA_CLIENT_ENV must be set
-object PineconeVectorExample extends App {
+object PineconeVectorLongDemo extends App {
 
   implicit val ec = ExecutionContext.global
   implicit val materializer = Materializer(ActorSystem())
