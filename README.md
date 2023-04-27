@@ -1,6 +1,7 @@
-# Pinecone Scala Client - Demo/Seed Project [![version](https://img.shields.io/badge/version-0.0.1-green.svg)](https://cequence.io) [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT)
+# Pinecone Scala Client - Demo/Seed Project
+[![version](https://img.shields.io/badge/version-0.0.1-green.svg)](https://cequence.io) [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT)
 
-This is a ready-to-fork, example/damo project demonstrating how to use [Pinecone Scala Client](https://github.com/cequence-io/pinecone-scala).
+This is a ready-to-fork, example/demo project demonstrating how to use [Pinecone Scala Client](https://github.com/cequence-io/pinecone-scala).
 
 Five single-function demos are available:
 
@@ -15,7 +16,7 @@ and two more complex (longer), one for each service:
 - [Pinecone Index Long Demo](./src/main/scala/io/cequence/pineconescala/demo/PineconeIndexLongDemo.scala)
 - [Pinecone Vector Long Demo](./src/main/scala/io/cequence/pineconescala/demo/PineconeVectorLongDemo.scala)
 
-Enjoy!
+That's it folks. Have fun with our Scala client!
 
 ## License ⚖️
 
