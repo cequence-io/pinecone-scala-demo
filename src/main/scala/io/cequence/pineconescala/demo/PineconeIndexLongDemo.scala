@@ -14,6 +14,7 @@ object PineconeIndexLongDemo extends App {
   implicit val materializer = Materializer(ActorSystem())
 
   private val indexName = "auto-gpt-test"
+  private val collectionName = s"${indexName}-collection"
 
   {
     for {
@@ -94,7 +95,7 @@ object PineconeIndexLongDemo extends App {
       }
 
       // create collection
-      _ <- pineconeIndexService.createCollection("auto-gpt-test-collection", "auto-gpt-test").map { response =>
+      _ <- pineconeIndexService.createCollection(collectionName, indexName).map { response =>
         println(s"Create collection response: ${response}")
       }
 
@@ -104,12 +105,12 @@ object PineconeIndexLongDemo extends App {
       )
 
       // describe collection (option is returned)
-      _ <- pineconeIndexService.describeCollection("auto-gpt-test-collection").map { collectionInfo =>
+      _ <- pineconeIndexService.describeCollection(collectionName).map { collectionInfo =>
         println(s"Collection info: ${collectionInfo}")
       }
 
       // delete collection
-      _ <- pineconeIndexService.deleteCollection("auto-gpt-test-collection").map(response =>
+      _ <- pineconeIndexService.deleteCollection(collectionName).map(response =>
         println(s"Delete collection response: ${response}")
       )
 
