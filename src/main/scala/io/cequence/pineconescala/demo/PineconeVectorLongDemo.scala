@@ -12,8 +12,8 @@ import scala.util.Random
 // run me - env. variables PINECONE_SCALA_CLIENT_API_KEY and PINECONE_SCALA_CLIENT_ENV must be set
 object PineconeVectorLongDemo extends App {
 
-  implicit val ec = ExecutionContext.global
-  implicit val materializer = Materializer(ActorSystem())
+  implicit val ec: ExecutionContext = ExecutionContext.global
+  implicit val materializer: Materializer = Materializer(ActorSystem())
 
   private val indexName = "auto-gpt-test"
   private val testIds = Seq("666", "667")

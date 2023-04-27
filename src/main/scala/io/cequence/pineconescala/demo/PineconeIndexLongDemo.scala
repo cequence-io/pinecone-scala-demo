@@ -10,8 +10,8 @@ import scala.concurrent.{ExecutionContext, Future}
 // run me - env. variables PINECONE_SCALA_CLIENT_API_KEY and PINECONE_SCALA_CLIENT_ENV must be set
 object PineconeIndexLongDemo extends App {
 
-  implicit val ec = ExecutionContext.global
-  implicit val materializer = Materializer(ActorSystem())
+  implicit val ec: ExecutionContext = ExecutionContext.global
+  implicit val materializer: Materializer = Materializer(ActorSystem())
 
   private val indexName = "auto-gpt-test"
   private val collectionName = s"${indexName}-collection"
