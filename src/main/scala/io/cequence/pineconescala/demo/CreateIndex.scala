@@ -1,12 +1,11 @@
 package io.cequence.pineconescala.demo
 
-import scala.concurrent.Future
 import io.cequence.pineconescala.domain.response.CreateResponse
 
 // run me - env. variables PINECONE_SCALA_CLIENT_API_KEY and PINECONE_SCALA_CLIENT_ENV must be set
 object CreateIndex extends PineconeDemoApp {
-  override protected def execWithIndexService =
-    _.createIndex(
+  override protected def exec =
+    pineconeIndexService.createIndex(
       name = "auto-gpt-test",
       dimension = 1536
     ).map(
@@ -16,7 +15,4 @@ object CreateIndex extends PineconeDemoApp {
         case CreateResponse.AlreadyExists => println("Index with a given name already exists.")
       }
     )
-
-  override protected def execWithVectorService =
-    _ => Future(()) // no-op
 }

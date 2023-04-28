@@ -2,16 +2,12 @@ package io.cequence.pineconescala.demo
 
 import io.cequence.pineconescala.domain.PVector
 
-import scala.concurrent.Future
 import scala.util.Random
 
 // run me - env. variables PINECONE_SCALA_CLIENT_API_KEY and PINECONE_SCALA_CLIENT_ENV must be set
 object UpsertVectors extends PineconeDemoApp {
-  override protected def execWithIndexService =
-    _ => Future(()) // no-op
-
-  override protected def execWithVectorService = (factory) => {
-    factory("auto-gpt-test").flatMap(
+  override protected def exec =
+    createPineconeVectorService("auto-gpt-test").flatMap(
       _.upsert(
         vectors = Seq(
           PVector(
@@ -38,5 +34,4 @@ object UpsertVectors extends PineconeDemoApp {
     ).map(vectorUpsertedCount =>
       println(s"Upserted $vectorUpsertedCount vectors.")
     )
-  }
 }
