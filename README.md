@@ -16,6 +16,10 @@ and two more complex (longer), one for each service:
 - [Pinecone Index Long Demo](./src/main/scala/io/cequence/pineconescala/demo/PineconeIndexLongDemo.scala)
 - [Pinecone Vector Long Demo](./src/main/scala/io/cequence/pineconescala/demo/PineconeVectorLongDemo.scala)
 
+Before you launch anything, don't forget to set the following env. variables:
+- `PINECONE_SCALA_CLIENT_API_KEY`
+- `PINECONE_SCALA_CLIENT_ENV`
+
 That's it folks. Have fun with our Scala client!
 
 ## License ⚖️
@@ -24,7 +28,7 @@ This library is available and published as open source under the terms of the [M
 
 ## Contributors 🙏
 
-This project is open-source and welcomes any contribution or feedback ([here](https://github.com/cequence-io/pinecone-scala-client/issues)).
+This project is open-source and welcomes any contribution or feedback ([here](https://github.com/cequence-io/pinecone-scala-demo/issues)).
 
 Development of this library has been supported by  [<img src="https://cequence.io/favicon-16x16.png"> - Cequence.io](https://cequence.io) - `The future of contracting`
 
