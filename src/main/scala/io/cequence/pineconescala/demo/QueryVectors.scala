@@ -16,7 +16,7 @@ object QueryVectors extends PineconeDemoApp {
         println(s"Matched vector id: ${matchInfo.id}")
         println(s"Matched vector values: ${matchInfo.values.take(20).mkString(", ")}..")  // by default values are not included
         println(s"Matched vector score: ${matchInfo.score}")
-        println(s"Matched vector metadata: ${matchInfo.metadata.get}") // by default metadata is included
+        println(s"Matched vector metadata: ${matchInfo.metadataUnwrapped}")               // by default metadata is included
       }
     }
 }
