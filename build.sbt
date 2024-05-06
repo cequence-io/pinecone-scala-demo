@@ -2,7 +2,7 @@ organization := "io.cequence"
 
 name := "pinecone-scala-demo"
 
-version := "0.1.0"
+version := "0.1.2"
 
 // Supported Scala versions
 val scala212 = "2.12.15"
