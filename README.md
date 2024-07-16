@@ -1,6 +1,12 @@
 # Pinecone Scala Client - Demo/Seed Project
 [![version](https://img.shields.io/badge/version-0.1.2-green.svg)](https://cequence.io) [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://opensource.org/licenses/MIT) [![Twitter Follow](https://img.shields.io/twitter/follow/0xbnd?style=social)](https://twitter.com/0xbnd)
 
+---
+
+### This project is archived! It has been moved to the main Pinecone Scala Client repository as a module [examples](https://github.com/cequence-io/pinecone-scala/tree/master/examples)
+
+---
+
 This is a ready-to-fork, example/demo project demonstrating how to use [Pinecone Scala Client](https://github.com/cequence-io/pinecone-scala).
 
 7 single-function demos are available:
